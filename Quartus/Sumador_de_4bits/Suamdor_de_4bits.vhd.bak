@@ -1,0 +1,5 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+----------------------------
+Entity Sumador_4bits is
+end Suamdor_4bits;

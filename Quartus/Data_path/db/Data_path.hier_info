@@ -1,0 +1,133 @@
+|Data_path
+Data_Register[0] => Shift_Register_right:REgistro.Entrada_nbits[0]
+Data_Register[1] => Shift_Register_right:REgistro.Entrada_nbits[1]
+Data_Register[2] => Shift_Register_right:REgistro.Entrada_nbits[2]
+Data_Register[3] => Shift_Register_right:REgistro.Entrada_nbits[3]
+Data_Register[4] => Shift_Register_right:REgistro.Entrada_nbits[4]
+Data_Register[5] => Shift_Register_right:REgistro.Entrada_nbits[5]
+Data_Register[6] => Shift_Register_right:REgistro.Entrada_nbits[6]
+Data_Register[7] => Shift_Register_right:REgistro.Entrada_nbits[7]
+Data_Contador[0] => Contador_4bits:COntador.uili[0]
+Data_Contador[1] => Contador_4bits:COntador.uili[1]
+Data_Contador[2] => Contador_4bits:COntador.uili[2]
+Data_Contador[3] => Contador_4bits:COntador.uili[3]
+Load_Register => Shift_Register_right:REgistro.Load
+Load_Contador => Contador_4bits:COntador.Load
+Enab_Register => Shift_Register_right:REgistro.Enable
+Enab_Contador => Contador_4bits:COntador.Enable
+Clock_50Mz => Divisor:Divisora.CLK
+Boton_dirty => de_bounce:Bototn_c.buton_dirty
+tall_Register << tall_Register.DB_MAX_OUTPUT_PORT_TYPE
+Contador_out[0] << Contador_4bits:COntador.salida[0]
+Contador_out[1] << Contador_4bits:COntador.salida[1]
+Contador_out[2] << Contador_4bits:COntador.salida[2]
+Contador_out[3] << Contador_4bits:COntador.salida[3]
+Valor_REgiste << Shift_Register_right:REgistro.Salida_nbits[0]
+
+
+|Data_path|Divisor:Divisora
+CLK => salida~reg0.CLK
+CLK => conta[0].CLK
+CLK => conta[1].CLK
+CLK => conta[2].CLK
+CLK => conta[3].CLK
+CLK => conta[4].CLK
+CLK => conta[5].CLK
+CLK => conta[6].CLK
+CLK => conta[7].CLK
+CLK => conta[8].CLK
+CLK => conta[9].CLK
+CLK => conta[10].CLK
+CLK => conta[11].CLK
+CLK => conta[12].CLK
+CLK => conta[13].CLK
+CLK => conta[14].CLK
+CLK => conta[15].CLK
+CLK => conta[16].CLK
+CLK => conta[17].CLK
+CLK => conta[18].CLK
+CLK => conta[19].CLK
+CLK => conta[20].CLK
+CLK => conta[21].CLK
+CLK => conta[22].CLK
+CLK => conta[23].CLK
+CLK => conta[24].CLK
+CLK => conta[25].CLK
+CLK => conta[26].CLK
+CLK => conta[27].CLK
+salida <= salida~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Data_path|de_bounce:Bototn_c
+CLK_1k => A.CLK
+CLK_1k => B.CLK
+CLK_1k => C.CLK
+buton_dirty => A.DATAIN
+Buton_clean <= Buton_clean.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Data_path|Shift_Register_right:REgistro
+Entrada_1bit => Salida_nbits[7]~reg0.DATAIN
+Enable => Equal0.IN3
+Load => Equal0.IN2
+Clock => Salida_nbits[0]~reg0.CLK
+Clock => Salida_nbits[1]~reg0.CLK
+Clock => Salida_nbits[2]~reg0.CLK
+Clock => Salida_nbits[3]~reg0.CLK
+Clock => Salida_nbits[4]~reg0.CLK
+Clock => Salida_nbits[5]~reg0.CLK
+Clock => Salida_nbits[6]~reg0.CLK
+Clock => Salida_nbits[7]~reg0.CLK
+Entrada_nbits[0] => Salida_nbits[0]~reg0.ADATA
+Entrada_nbits[1] => Salida_nbits[1]~reg0.ADATA
+Entrada_nbits[2] => Salida_nbits[2]~reg0.ADATA
+Entrada_nbits[3] => Salida_nbits[3]~reg0.ADATA
+Entrada_nbits[4] => Salida_nbits[4]~reg0.ADATA
+Entrada_nbits[5] => Salida_nbits[5]~reg0.ADATA
+Entrada_nbits[6] => Salida_nbits[6]~reg0.ADATA
+Entrada_nbits[7] => Salida_nbits[7]~reg0.ADATA
+Salida_nbits[0] <= Salida_nbits[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[1] <= Salida_nbits[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[2] <= Salida_nbits[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[3] <= Salida_nbits[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[4] <= Salida_nbits[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[5] <= Salida_nbits[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[6] <= Salida_nbits[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[7] <= Salida_nbits[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Data_path|Contador_4bits:COntador
+CLK => conta1[0].CLK
+CLK => conta1[1].CLK
+CLK => conta1[2].CLK
+CLK => conta1[3].CLK
+CLK => conta1[4].CLK
+CLK => conta1[5].CLK
+CLK => conta1[6].CLK
+CLK => conta1[7].CLK
+Load => conta1[0].ALOAD
+Load => conta1[1].ALOAD
+Load => conta1[2].ALOAD
+Load => conta1[3].ALOAD
+Load => conta1[4].ACLR
+Load => conta1[5].ACLR
+Load => conta1[6].ACLR
+Load => conta1[7].ACLR
+Enable => conta1[0].ENA
+Enable => conta1[7].ENA
+Enable => conta1[6].ENA
+Enable => conta1[5].ENA
+Enable => conta1[4].ENA
+Enable => conta1[3].ENA
+Enable => conta1[2].ENA
+Enable => conta1[1].ENA
+uili[0] => conta1[0].ADATA
+uili[1] => conta1[1].ADATA
+uili[2] => conta1[2].ADATA
+uili[3] => conta1[3].ADATA
+salida[0] <= conta1[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= conta1[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= conta1[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= conta1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

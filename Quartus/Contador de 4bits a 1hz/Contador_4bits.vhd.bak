@@ -1,0 +1,72 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+--------------------
+Entity Contador_4bits is
+	
+	Port(
+		CLK: in std_logic;
+		salida: out std_logic_vector (3 downto 0)
+	);
+	
+End Contador_4bits;
+--------------------
+Architecture maind of Contador_4bits is
+	
+	Constant DESBORDA: std_logic_vector (27 downto 0):= x"2FAF07F";
+	
+	Signal conta0: std_logic_vector ( 27 downto 0);
+	Signal conta1: std_logic_vector ( 3 downto 0) ;
+	
+	Signal makaku:bit;
+	
+	
+begin
+
+	Process(Clk)
+	begin
+		
+			if(CLK'Event and CLK='1') then
+					
+				-----Conpaador
+				if(Conta0 = DESBORDA) then
+				
+					Conta0 <= (OTHERS => '0');
+				
+				else
+					Conta0 <= Conta0 + x"0000001";
+				
+				
+				end if;
+				-----Pulso
+				if(Conta0 = DESBORDA0) then
+				
+					makaku<='1';
+					
+				else
+					
+					makaku<='0';
+				
+				end if;
+			
+			end if;
+	
+	end process;
+	
+	------LED
+	Process(makaku)
+	begin
+	
+		if(makaku'event and makaku = '1') then
+	
+				Conta1 <= Conta1 + x"1";
+		
+		end if;
+	
+	end process;
+	
+	-----Convinacional
+	
+	salida<=Conta1;
+	
+End maind;

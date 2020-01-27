@@ -1,0 +1,63 @@
+|TOP
+Serial_int => Serial_Paralelo:Serial_paralela.Serial_int
+Buton => de_bounce:De_debonca.buton_dirty
+Clk_50M => Divisor:Clock_general.CLK
+Salida[0] << Serial_Paralelo:Serial_paralela.q[0]
+Salida[1] << Serial_Paralelo:Serial_paralela.q[1]
+Salida[2] << Serial_Paralelo:Serial_paralela.q[2]
+Salida[3] << Serial_Paralelo:Serial_paralela.q[3]
+
+
+|TOP|Divisor:Clock_general
+CLK => salida~reg0.CLK
+CLK => conta[0].CLK
+CLK => conta[1].CLK
+CLK => conta[2].CLK
+CLK => conta[3].CLK
+CLK => conta[4].CLK
+CLK => conta[5].CLK
+CLK => conta[6].CLK
+CLK => conta[7].CLK
+CLK => conta[8].CLK
+CLK => conta[9].CLK
+CLK => conta[10].CLK
+CLK => conta[11].CLK
+CLK => conta[12].CLK
+CLK => conta[13].CLK
+CLK => conta[14].CLK
+CLK => conta[15].CLK
+CLK => conta[16].CLK
+CLK => conta[17].CLK
+CLK => conta[18].CLK
+CLK => conta[19].CLK
+CLK => conta[20].CLK
+CLK => conta[21].CLK
+CLK => conta[22].CLK
+CLK => conta[23].CLK
+CLK => conta[24].CLK
+CLK => conta[25].CLK
+CLK => conta[26].CLK
+CLK => conta[27].CLK
+salida <= salida~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|de_bounce:De_debonca
+CLK_1k => A.CLK
+CLK_1k => B.CLK
+CLK_1k => C.CLK
+buton_dirty => A.DATAIN
+Buton_clean <= Buton_clean.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|Serial_paralelo:Serial_paralela
+CLK => q[0]~reg0.CLK
+CLK => q[1]~reg0.CLK
+CLK => q[2]~reg0.CLK
+CLK => q[3]~reg0.CLK
+Serial_int => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

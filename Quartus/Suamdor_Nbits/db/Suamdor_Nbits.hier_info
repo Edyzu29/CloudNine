@@ -1,0 +1,146 @@
+|Suamdor_Nbits
+X[0] => Suamdor_4bits:U0.X[0]
+X[1] => Suamdor_4bits:U0.X[1]
+X[2] => Suamdor_4bits:U0.X[2]
+X[3] => Suamdor_4bits:U0.X[3]
+X[4] => Suamdor_4bits:U0.X[4]
+X[5] => Suamdor_4bits:U0.X[5]
+X[6] => Suamdor_4bits:U0.X[6]
+X[7] => Suamdor_4bits:U0.X[7]
+y[0] => Suamdor_4bits:U0.y[0]
+y[1] => Suamdor_4bits:U0.y[1]
+y[2] => Suamdor_4bits:U0.y[2]
+y[3] => Suamdor_4bits:U0.y[3]
+y[4] => Suamdor_4bits:U0.y[4]
+y[5] => Suamdor_4bits:U0.y[5]
+y[6] => Suamdor_4bits:U0.y[6]
+y[7] => Suamdor_4bits:U0.y[7]
+C_in => Suamdor_4bits:U0.C_in
+Suma_4bits[0] <= Suamdor_4bits:U0.Suma_4bits[0]
+Suma_4bits[1] <= Suamdor_4bits:U0.Suma_4bits[1]
+Suma_4bits[2] <= Suamdor_4bits:U0.Suma_4bits[2]
+Suma_4bits[3] <= Suamdor_4bits:U0.Suma_4bits[3]
+Suma_4bits[4] <= Suamdor_4bits:U0.Suma_4bits[4]
+Suma_4bits[5] <= Suamdor_4bits:U0.Suma_4bits[5]
+Suma_4bits[6] <= Suamdor_4bits:U0.Suma_4bits[6]
+Suma_4bits[7] <= Suamdor_4bits:U0.Suma_4bits[7]
+C_out <= Suamdor_4bits:U0.C_out
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0
+X[0] => Suamdor_1bit:pepe:0:U0.A
+X[1] => Suamdor_1bit:pepe:1:U0.A
+X[2] => Suamdor_1bit:pepe:2:U0.A
+X[3] => Suamdor_1bit:pepe:3:U0.A
+X[4] => Suamdor_1bit:pepe:4:U0.A
+X[5] => Suamdor_1bit:pepe:5:U0.A
+X[6] => Suamdor_1bit:pepe:6:U0.A
+X[7] => Suamdor_1bit:pepe:7:U0.A
+y[0] => Suamdor_1bit:pepe:0:U0.B
+y[1] => Suamdor_1bit:pepe:1:U0.B
+y[2] => Suamdor_1bit:pepe:2:U0.B
+y[3] => Suamdor_1bit:pepe:3:U0.B
+y[4] => Suamdor_1bit:pepe:4:U0.B
+y[5] => Suamdor_1bit:pepe:5:U0.B
+y[6] => Suamdor_1bit:pepe:6:U0.B
+y[7] => Suamdor_1bit:pepe:7:U0.B
+C_in => Suamdor_1bit:pepe:0:U0.C_in
+Suma_4bits[0] <= Suamdor_1bit:pepe:0:U0.Suma_1bit
+Suma_4bits[1] <= Suamdor_1bit:pepe:1:U0.Suma_1bit
+Suma_4bits[2] <= Suamdor_1bit:pepe:2:U0.Suma_1bit
+Suma_4bits[3] <= Suamdor_1bit:pepe:3:U0.Suma_1bit
+Suma_4bits[4] <= Suamdor_1bit:pepe:4:U0.Suma_1bit
+Suma_4bits[5] <= Suamdor_1bit:pepe:5:U0.Suma_1bit
+Suma_4bits[6] <= Suamdor_1bit:pepe:6:U0.Suma_1bit
+Suma_4bits[7] <= Suamdor_1bit:pepe:7:U0.Suma_1bit
+C_out <= Suamdor_1bit:pepe:7:U0.C_out_1bit
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:0:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:1:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:2:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:3:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:4:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:5:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:6:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_Nbits|Suamdor_4bits:U0|Suamdor_1bit:\pepe:7:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+

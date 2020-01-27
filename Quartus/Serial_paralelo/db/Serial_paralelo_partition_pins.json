@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Salida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Serial_int",
+					"strict" : false
+				},
+				{
+					"name" : "Buton",
+					"strict" : false
+				},
+				{
+					"name" : "Clk_50M",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

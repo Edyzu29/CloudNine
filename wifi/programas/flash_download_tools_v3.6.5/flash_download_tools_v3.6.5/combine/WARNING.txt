@@ -1,0 +1,2 @@
+C:\Users\Edwin\Desktop\wifi\ESP8266_NONOS_SDK-3.0\bin\blank.bin has CONFLICTS with other firmware
+COMBINE BIN OVERSIZE

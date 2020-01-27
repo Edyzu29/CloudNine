@@ -1,0 +1,16 @@
+|Contador_6
+CLK => Conta1[0].CLK
+CLK => Conta1[1].CLK
+CLK => Conta1[2].CLK
+CLK => Conta1[3].CLK
+Enable => Conta1[1].ENA
+Enable => Conta1[0].ENA
+Enable => Conta1[2].ENA
+Enable => Conta1[3].ENA
+Carry_out <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+salida[0] <= Conta1[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Conta1[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Conta1[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Conta1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

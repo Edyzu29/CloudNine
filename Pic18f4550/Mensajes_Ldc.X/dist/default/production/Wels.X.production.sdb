@@ -1,0 +1,367 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"11 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\Confi.c
+[v _Inicializacion Inicializacion `(v  1 e 1 0 ]
+"50 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\MiLCD.c
+[v _LCD_Inicializa LCD_Inicializa `(v  1 e 1 0 ]
+"89
+[v _LCD_CursorIncr LCD_CursorIncr `(v  1 e 1 0 ]
+"135
+[v _LCD_PosicionLinea1 LCD_PosicionLinea1 `(v  1 e 1 0 ]
+"145
+[v _LCD_PosicionLinea2 LCD_PosicionLinea2 `(v  1 e 1 0 ]
+"192
+[v _LCD_CursorOFF LCD_CursorOFF `(v  1 e 1 0 ]
+"202
+[v _LCD_Borra LCD_Borra `(v  1 e 1 0 ]
+"212
+[v _LCD_2Lineas8Bits5x7 LCD_2Lineas8Bits5x7 `(v  1 e 1 0 ]
+"222
+[v _LCD_EnviaComando LCD_EnviaComando `(v  1 e 1 0 ]
+"233
+[v _LCD_EnviaCaracter LCD_EnviaCaracter `(v  1 e 1 0 ]
+"245
+[v _LCD_EnviaCadena LCD_EnviaCadena `(v  1 e 1 0 ]
+"256
+[v _LCD_Envia LCD_Envia `(v  1 e 1 0 ]
+"298
+[v _LCD_CodigoCGROM LCD_CodigoCGROM `(uc  1 e 1 0 ]
+"346
+[v _LCD_EnviaBlancos LCD_EnviaBlancos `(v  1 e 1 0 ]
+"383
+[v _LCD_EnviaNibble LCD_EnviaNibble `(v  1 e 1 0 ]
+"394
+[v _LCD_Port LCD_Port `(v  1 e 1 0 ]
+"411
+[v _LCD_CfgPort LCD_CfgPort `(v  1 e 1 0 ]
+"23 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\Sustentacion.c
+[v _main main `(v  1 e 1 0 ]
+"87
+[v _Wels Wels `IIH(v  1 e 1 0 ]
+[s S65 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2483 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic18f4550.h
+[s S269 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S277 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S280 . 1 `S65 1 . 1 0 `S269 1 . 1 0 `S277 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES280  1 e 1 @3969 ]
+[s S136 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"2605
+[s S145 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S152 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S159 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S163 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S166 . 1 `S136 1 . 1 0 `S145 1 . 1 0 `S152 1 . 1 0 `S159 1 . 1 0 `S163 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES166  1 e 1 @3970 ]
+[s S105 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"2736
+[s S314 . 1 `uc 1 SPP0 1 0 :1:0 
+`uc 1 SPP1 1 0 :1:1 
+`uc 1 SPP2 1 0 :1:2 
+`uc 1 SPP3 1 0 :1:3 
+`uc 1 SPP4 1 0 :1:4 
+`uc 1 SPP5 1 0 :1:5 
+`uc 1 SPP6 1 0 :1:6 
+`uc 1 SPP7 1 0 :1:7 
+]
+[s S323 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S326 . 1 `S105 1 . 1 0 `S314 1 . 1 0 `S323 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES326  1 e 1 @3971 ]
+[s S56 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"3657
+[u S74 . 1 `S56 1 . 1 0 `S65 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES74  1 e 1 @3987 ]
+[s S24 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3875
+[s S31 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S38 . 1 `S24 1 . 1 0 `S31 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES38  1 e 1 @3988 ]
+[s S96 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"4033
+[u S114 . 1 `S96 1 . 1 0 `S105 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES114  1 e 1 @3989 ]
+[s S447 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"8009
+[s S453 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S461 . 1 `S447 1 . 1 0 `S453 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES461  1 e 1 @4051 ]
+[s S518 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"8614
+[s S527 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S536 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S540 . 1 `S518 1 . 1 0 `S527 1 . 1 0 `S536 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES540  1 e 1 @4082 ]
+"8 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\Sustentacion.c
+[v _Contador Contador `uc  1 e 1 0 ]
+"9
+[v _i i `us  1 e 2 0 ]
+"10
+[v _Msj1 Msj1 `[11]uc  1 e 11 0 ]
+"11
+[v _Msj2 Msj2 `[15]uc  1 e 15 0 ]
+"12
+[v _Msj3 Msj3 `[12]uc  1 e 12 0 ]
+"13
+[v _Msj4 Msj4 `[14]uc  1 e 14 0 ]
+"14
+[v _Msj5 Msj5 `[13]uc  1 e 13 0 ]
+"15
+[v _Msj6 Msj6 `[16]uc  1 e 16 0 ]
+"23
+[v _main main `(v  1 e 1 0 ]
+{
+"85
+} 0
+"145 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\MiLCD.c
+[v _LCD_PosicionLinea2 LCD_PosicionLinea2 `(v  1 e 1 0 ]
+{
+[v LCD_PosicionLinea2@Pos Pos `uc  1 a 1 wreg ]
+[v LCD_PosicionLinea2@Pos Pos `uc  1 a 1 wreg ]
+"147
+[v LCD_PosicionLinea2@Pos Pos `uc  1 a 1 13 ]
+"148
+} 0
+"135
+[v _LCD_PosicionLinea1 LCD_PosicionLinea1 `(v  1 e 1 0 ]
+{
+[v LCD_PosicionLinea1@Pos Pos `uc  1 a 1 wreg ]
+[v LCD_PosicionLinea1@Pos Pos `uc  1 a 1 wreg ]
+"137
+[v LCD_PosicionLinea1@Pos Pos `uc  1 a 1 13 ]
+"138
+} 0
+"245
+[v _LCD_EnviaCadena LCD_EnviaCadena `(v  1 e 1 0 ]
+{
+[v LCD_EnviaCadena@Cadena Cadena `*.35uc  1 p 2 13 ]
+"249
+} 0
+"233
+[v _LCD_EnviaCaracter LCD_EnviaCaracter `(v  1 e 1 0 ]
+{
+[v LCD_EnviaCaracter@Caracter Caracter `uc  1 a 1 wreg ]
+[v LCD_EnviaCaracter@Caracter Caracter `uc  1 a 1 wreg ]
+"235
+[v LCD_EnviaCaracter@Caracter Caracter `uc  1 a 1 12 ]
+"238
+} 0
+"298
+[v _LCD_CodigoCGROM LCD_CodigoCGROM `(uc  1 e 1 0 ]
+{
+[v LCD_CodigoCGROM@Caracter Caracter `uc  1 a 1 wreg ]
+[v LCD_CodigoCGROM@Caracter Caracter `uc  1 a 1 wreg ]
+"300
+[v LCD_CodigoCGROM@Caracter Caracter `uc  1 a 1 0 ]
+"304
+} 0
+"11 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\Confi.c
+[v _Inicializacion Inicializacion `(v  1 e 1 0 ]
+{
+"22
+} 0
+"50 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\MiLCD.c
+[v _LCD_Inicializa LCD_Inicializa `(v  1 e 1 0 ]
+{
+"83
+} 0
+"192
+[v _LCD_CursorOFF LCD_CursorOFF `(v  1 e 1 0 ]
+{
+"195
+} 0
+"89
+[v _LCD_CursorIncr LCD_CursorIncr `(v  1 e 1 0 ]
+{
+"92
+} 0
+"202
+[v _LCD_Borra LCD_Borra `(v  1 e 1 0 ]
+{
+"205
+} 0
+"212
+[v _LCD_2Lineas8Bits5x7 LCD_2Lineas8Bits5x7 `(v  1 e 1 0 ]
+{
+"215
+} 0
+"222
+[v _LCD_EnviaComando LCD_EnviaComando `(v  1 e 1 0 ]
+{
+[v LCD_EnviaComando@Comando Comando `uc  1 a 1 wreg ]
+[v LCD_EnviaComando@Comando Comando `uc  1 a 1 wreg ]
+"224
+[v LCD_EnviaComando@Comando Comando `uc  1 a 1 12 ]
+"226
+} 0
+"256
+[v _LCD_Envia LCD_Envia `(v  1 e 1 0 ]
+{
+[v LCD_Envia@Dato Dato `uc  1 a 1 wreg ]
+"258
+[v LCD_Envia@LCD_GuardaTRIS LCD_GuardaTRIS `uc  1 a 1 11 ]
+"256
+[v LCD_Envia@Dato Dato `uc  1 a 1 wreg ]
+"258
+[v LCD_Envia@Dato Dato `uc  1 a 1 10 ]
+"284
+} 0
+"394
+[v _LCD_Port LCD_Port `(v  1 e 1 0 ]
+{
+[v LCD_Port@Dato Dato `uc  1 a 1 wreg ]
+[v LCD_Port@Dato Dato `uc  1 a 1 wreg ]
+"396
+[v LCD_Port@Dato Dato `uc  1 a 1 1 ]
+"404
+} 0
+"411
+[v _LCD_CfgPort LCD_CfgPort `(v  1 e 1 0 ]
+{
+[v LCD_CfgPort@Cfg Cfg `uc  1 a 1 wreg ]
+[v LCD_CfgPort@Cfg Cfg `uc  1 a 1 wreg ]
+"413
+[v LCD_CfgPort@Cfg Cfg `uc  1 a 1 1 ]
+"421
+} 0
+"87 C:\Users\maxed\Desktop\Proyectos\Pic18f4550\Wels.X\Sustentacion.c
+[v _Wels Wels `IIH(v  1 e 1 0 ]
+{
+"93
+} 0

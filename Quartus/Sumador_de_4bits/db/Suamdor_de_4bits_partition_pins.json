@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Suma_4bits[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Suma_4bits[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Suma_4bits[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Suma_4bits[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C_out",
+					"strict" : false
+				},
+				{
+					"name" : "C_in",
+					"strict" : false
+				},
+				{
+					"name" : "X[0]",
+					"strict" : false
+				},
+				{
+					"name" : "y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "X[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "X[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "X[3]",
+					"strict" : false
+				},
+				{
+					"name" : "y[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

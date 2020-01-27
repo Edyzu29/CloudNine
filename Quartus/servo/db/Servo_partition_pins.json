@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "salida",
+					"strict" : false
+				},
+				{
+					"name" : "uili[0]",
+					"strict" : false
+				},
+				{
+					"name" : "uili[1]",
+					"strict" : false
+				},
+				{
+					"name" : "uili[2]",
+					"strict" : false
+				},
+				{
+					"name" : "uili[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

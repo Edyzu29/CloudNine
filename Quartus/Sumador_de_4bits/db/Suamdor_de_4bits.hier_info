@@ -1,0 +1,61 @@
+|Suamdor_de_4bits
+X[0] => Suamdor_1bit:U0.A
+X[1] => Suamdor_1bit:U1.A
+X[2] => Suamdor_1bit:U2.A
+X[3] => Suamdor_1bit:U3.A
+y[0] => Suamdor_1bit:U0.B
+y[1] => Suamdor_1bit:U1.B
+y[2] => Suamdor_1bit:U2.B
+y[3] => Suamdor_1bit:U3.B
+C_in => Suamdor_1bit:U0.C_in
+Suma_4bits[0] << Suamdor_1bit:U0.Suma_1bit
+Suma_4bits[1] << Suamdor_1bit:U1.Suma_1bit
+Suma_4bits[2] << Suamdor_1bit:U2.Suma_1bit
+Suma_4bits[3] << Suamdor_1bit:U3.Suma_1bit
+C_out << Suamdor_1bit:U3.C_out_1bit
+
+
+|Suamdor_de_4bits|Suamdor_1bit:U0
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_de_4bits|Suamdor_1bit:U1
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_de_4bits|Suamdor_1bit:U2
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Suamdor_de_4bits|Suamdor_1bit:U3
+A => S1.IN0
+A => S3.IN0
+B => S1.IN1
+B => S3.IN1
+C_in => Suma_1bit.IN1
+C_in => S2.IN1
+Suma_1bit <= Suma_1bit.DB_MAX_OUTPUT_PORT_TYPE
+C_out_1bit <= C_out_1bit.DB_MAX_OUTPUT_PORT_TYPE
+
+

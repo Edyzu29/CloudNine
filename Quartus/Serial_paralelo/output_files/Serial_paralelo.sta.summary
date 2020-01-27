@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clk_50M'
+Slack : -2.623
+TNS   : -53.368
+
+Type  : Slow 1200mV 85C Model Setup 'Divisor:Clock_general|salida'
+Slack : -0.277
+TNS   : -0.277
+
+Type  : Slow 1200mV 85C Model Setup 'de_bounce:De_debonca|A'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Divisor:Clock_general|salida'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'de_bounce:De_debonca|A'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clk_50M'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk_50M'
+Slack : -3.000
+TNS   : -43.687
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'de_bounce:De_debonca|A'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Divisor:Clock_general|salida'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Slow 1200mV 0C Model Setup 'Clk_50M'
+Slack : -2.323
+TNS   : -45.794
+
+Type  : Slow 1200mV 0C Model Setup 'Divisor:Clock_general|salida'
+Slack : -0.258
+TNS   : -0.258
+
+Type  : Slow 1200mV 0C Model Setup 'de_bounce:De_debonca|A'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Divisor:Clock_general|salida'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'de_bounce:De_debonca|A'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clk_50M'
+Slack : 0.583
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk_50M'
+Slack : -3.000
+TNS   : -43.687
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'de_bounce:De_debonca|A'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Divisor:Clock_general|salida'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Fast 1200mV 0C Model Setup 'Clk_50M'
+Slack : -0.529
+TNS   : -6.501
+
+Type  : Fast 1200mV 0C Model Setup 'Divisor:Clock_general|salida'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'de_bounce:De_debonca|A'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'de_bounce:De_debonca|A'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Divisor:Clock_general|salida'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clk_50M'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk_50M'
+Slack : -3.000
+TNS   : -33.062
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'de_bounce:De_debonca|A'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Divisor:Clock_general|salida'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

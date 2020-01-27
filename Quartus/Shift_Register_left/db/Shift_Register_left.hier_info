@@ -1,0 +1,18 @@
+|Shift_Register_left
+Entrada_1bit => Salida_nbits[3]~reg0.DATAIN
+Enable => Equal0.IN3
+Load => Equal0.IN2
+Clock => Salida_nbits[0]~reg0.CLK
+Clock => Salida_nbits[1]~reg0.CLK
+Clock => Salida_nbits[2]~reg0.CLK
+Clock => Salida_nbits[3]~reg0.CLK
+Entrada_nbits[0] => Salida_nbits[0]~reg0.ADATA
+Entrada_nbits[1] => Salida_nbits[1]~reg0.ADATA
+Entrada_nbits[2] => Salida_nbits[2]~reg0.ADATA
+Entrada_nbits[3] => Salida_nbits[3]~reg0.ADATA
+Salida_nbits[0] << Salida_nbits[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[1] << Salida_nbits[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[2] << Salida_nbits[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[3] << Salida_nbits[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

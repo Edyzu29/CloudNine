@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLK'
+Slack : -2.489
+TNS   : -97.822
+
+Type  : Slow 1100mV 85C Model Setup 'makaku'
+Slack : -1.641
+TNS   : -18.017
+
+Type  : Slow 1100mV 85C Model Hold 'CLK'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'makaku'
+Slack : 0.690
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.628
+TNS   : -22.364
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'makaku'
+Slack : -0.394
+TNS   : -5.717
+
+Type  : Slow 1100mV 0C Model Setup 'CLK'
+Slack : -2.731
+TNS   : -97.387
+
+Type  : Slow 1100mV 0C Model Setup 'makaku'
+Slack : -1.691
+TNS   : -18.062
+
+Type  : Slow 1100mV 0C Model Hold 'CLK'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'makaku'
+Slack : 0.674
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.612
+TNS   : -24.028
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'makaku'
+Slack : -0.394
+TNS   : -5.629
+
+Type  : Fast 1100mV 85C Model Setup 'CLK'
+Slack : -1.044
+TNS   : -39.120
+
+Type  : Fast 1100mV 85C Model Setup 'makaku'
+Slack : -0.664
+TNS   : -6.990
+
+Type  : Fast 1100mV 85C Model Hold 'CLK'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'makaku'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -0.571
+TNS   : -4.491
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'makaku'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLK'
+Slack : -1.026
+TNS   : -34.016
+
+Type  : Fast 1100mV 0C Model Setup 'makaku'
+Slack : -0.621
+TNS   : -6.157
+
+Type  : Fast 1100mV 0C Model Hold 'CLK'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'makaku'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -0.537
+TNS   : -4.353
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'makaku'
+Slack : 0.149
+TNS   : 0.000
+
+------------------------------------------------------------

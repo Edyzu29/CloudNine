@@ -1,0 +1,40 @@
+|Moore
+w => Selector1.IN3
+w => Selector2.IN3
+w => nx_state.D.DATAA
+w => Selector0.IN1
+w => Selector1.IN1
+w => Selector2.IN1
+reset => pr_state~3.DATAIN
+clk => Clock_1Mz.CLK
+clk => conta0[0].CLK
+clk => conta0[1].CLK
+clk => conta0[2].CLK
+clk => conta0[3].CLK
+clk => conta0[4].CLK
+clk => conta0[5].CLK
+clk => conta0[6].CLK
+clk => conta0[7].CLK
+clk => conta0[8].CLK
+clk => conta0[9].CLK
+clk => conta0[10].CLK
+clk => conta0[11].CLK
+clk => conta0[12].CLK
+clk => conta0[13].CLK
+clk => conta0[14].CLK
+clk => conta0[15].CLK
+clk => conta0[16].CLK
+clk => conta0[17].CLK
+clk => conta0[18].CLK
+clk => conta0[19].CLK
+clk => conta0[20].CLK
+clk => conta0[21].CLK
+clk => conta0[22].CLK
+clk => conta0[23].CLK
+clk => conta0[24].CLK
+clk => conta0[25].CLK
+clk => conta0[26].CLK
+clk => conta0[27].CLK
+salida << LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

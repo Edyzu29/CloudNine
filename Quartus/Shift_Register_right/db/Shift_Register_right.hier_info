@@ -1,0 +1,75 @@
+|TOp
+Entrada_1bit => Shift_Register_right:Shift_Registro.Entrada_1bit
+Enable => Shift_Register_right:Shift_Registro.Enable
+Load => Shift_Register_right:Shift_Registro.Load
+Clock => Divisor:Divisor_50Mhz_a_1khz.CLK
+buton => de_bounce:Limpieza_de_boton.buton_dirty
+Entrada_nbits[0] => Shift_Register_right:Shift_Registro.Entrada_nbits[0]
+Entrada_nbits[1] => Shift_Register_right:Shift_Registro.Entrada_nbits[1]
+Entrada_nbits[2] => Shift_Register_right:Shift_Registro.Entrada_nbits[2]
+Entrada_nbits[3] => Shift_Register_right:Shift_Registro.Entrada_nbits[3]
+Salida_nbits[0] << Shift_Register_right:Shift_Registro.Salida_nbits[0]
+Salida_nbits[1] << Shift_Register_right:Shift_Registro.Salida_nbits[1]
+Salida_nbits[2] << Shift_Register_right:Shift_Registro.Salida_nbits[2]
+Salida_nbits[3] << Shift_Register_right:Shift_Registro.Salida_nbits[3]
+
+
+|TOp|Divisor:Divisor_50Mhz_a_1khz
+CLK => salida~reg0.CLK
+CLK => conta[0].CLK
+CLK => conta[1].CLK
+CLK => conta[2].CLK
+CLK => conta[3].CLK
+CLK => conta[4].CLK
+CLK => conta[5].CLK
+CLK => conta[6].CLK
+CLK => conta[7].CLK
+CLK => conta[8].CLK
+CLK => conta[9].CLK
+CLK => conta[10].CLK
+CLK => conta[11].CLK
+CLK => conta[12].CLK
+CLK => conta[13].CLK
+CLK => conta[14].CLK
+CLK => conta[15].CLK
+CLK => conta[16].CLK
+CLK => conta[17].CLK
+CLK => conta[18].CLK
+CLK => conta[19].CLK
+CLK => conta[20].CLK
+CLK => conta[21].CLK
+CLK => conta[22].CLK
+CLK => conta[23].CLK
+CLK => conta[24].CLK
+CLK => conta[25].CLK
+CLK => conta[26].CLK
+CLK => conta[27].CLK
+salida <= salida~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOp|de_bounce:Limpieza_de_boton
+CLK_1k => A.CLK
+CLK_1k => B.CLK
+CLK_1k => C.CLK
+buton_dirty => A.DATAIN
+Buton_clean <= Buton_clean.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOp|Shift_Register_right:Shift_Registro
+Entrada_1bit => Salida_nbits[3]~reg0.DATAIN
+Enable => Equal0.IN3
+Load => Equal0.IN2
+Clock => Salida_nbits[0]~reg0.CLK
+Clock => Salida_nbits[1]~reg0.CLK
+Clock => Salida_nbits[2]~reg0.CLK
+Clock => Salida_nbits[3]~reg0.CLK
+Entrada_nbits[0] => Salida_nbits[0]~reg0.ADATA
+Entrada_nbits[1] => Salida_nbits[1]~reg0.ADATA
+Entrada_nbits[2] => Salida_nbits[2]~reg0.ADATA
+Entrada_nbits[3] => Salida_nbits[3]~reg0.ADATA
+Salida_nbits[0] <= Salida_nbits[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[1] <= Salida_nbits[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[2] <= Salida_nbits[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Salida_nbits[3] <= Salida_nbits[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+Library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+--------------------------------
+Entity Shift_Register_right is
+	Generic( n: Integer :=4);
+	Port(
+		Entrada_1bit: 		in 		Std_logic;
+		Enable: 				in 		Std_logic;
+		Load: 				in 		Std_logic;
+		Entrada_nbits: 	in			Std_logic_vector(n-1 downto 0);
+		Salida_nbits:		out 		Std_logic_vector(n-1 downto 0)
+	);
+
+End Shift_Register_right;

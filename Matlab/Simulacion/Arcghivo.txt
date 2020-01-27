@@ -1,0 +1,7 @@
+
+-Hacer pruebas con bateria
+	carga y descarga RL
+
+-Realizar pruebas de simulacion
+	carga y descarga (RL)
+
